@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateInstance", "CreateInstance\CreateInstance.csproj", "{996F7F3C-06BB-432C-84BF-CB8C49A56CB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreateInstance", "CreateInstance\CreateInstance.csproj", "{996F7F3C-06BB-432C-84BF-CB8C49A56CB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefReturn", "RefReturnRefLocal\RefReturn.csproj", "{3233F7A2-0DD7-4955-8054-B7D617560CB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefReturn", "RefReturnRefLocal\RefReturn.csproj", "{3233F7A2-0DD7-4955-8054-B7D617560CB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading", "OperatorOverloading\OperatorOverloading.csproj", "{8E495FF8-919C-4650-BD29-1DF6951CE553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperatorOverloading", "OperatorOverloading\OperatorOverloading.csproj", "{8E495FF8-919C-4650-BD29-1DF6951CE553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplicitExplicit", "ImplicitExplicit\ImplicitExplicit.csproj", "{A721D5DD-6387-409D-8A5A-6D6F6B47F6EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{8E495FF8-919C-4650-BD29-1DF6951CE553}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E495FF8-919C-4650-BD29-1DF6951CE553}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E495FF8-919C-4650-BD29-1DF6951CE553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A721D5DD-6387-409D-8A5A-6D6F6B47F6EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A721D5DD-6387-409D-8A5A-6D6F6B47F6EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A721D5DD-6387-409D-8A5A-6D6F6B47F6EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A721D5DD-6387-409D-8A5A-6D6F6B47F6EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

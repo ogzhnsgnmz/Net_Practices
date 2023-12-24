@@ -58,6 +58,16 @@ class Quote
 {
     public string Text { get; set; }
     public string Person { get; set; }
+    public static Category operator +(Category c, Quote q)
+    {
+        c.Quotes.Add(q);
+        return c;
+    }
+    public static Category operator +(Quote q, Category c)
+    {
+        c.Quotes.Add(q);
+        return c;
+    }
 }
 
 class Program3
@@ -71,9 +81,53 @@ class Program3
 
         Quote quote = new()
         {
-            Text = "Benim kitabımda vazgeçmek de yenilmek de yoktur... Ben kaybedenlere asla kızmam. Ama vazgeçenleri ve yenilgiyi baştan kabul edenleri siler atarım. Kaybetse de sonuna kadar mücadele edenler benim her zaman yanımda olacak ve onlar sonunda mutlaka kazanacak.",
+            Text = "Benim kitabımda vazgeçmek de yenilmek de yoktur... Ben kaybedenlere asla kızmam. " +
+            "Ama vazgeçenleri ve yenilgiyi baştan kabul edenleri siler atarım. Kaybetse de sonuna kadar " +
+            "mücadele edenler benim her zaman yanımda olacak ve onlar sonunda mutlaka kazanacak.",
             Person = "Fatih Terim"
         };
-        //var s = category + quote; // hata!
+
+        var result = category + quote;
+    }
+}
+
+class Server
+{
+    static void Download(int fileCount)
+    {
+        for (int i = 0; i < fileCount; i++)
+            Console.WriteLine($"{i+1}. file downloaded");
+    }
+    static void Upload(int fileCount)
+    {
+        for (int i = 0; i < fileCount; i++)
+            Console.WriteLine($"{i+1}. file uploaded");
+    }
+    public static bool operator <<(Server server, int fileCount)
+    {
+        Download(fileCount);
+        return true;
+    }
+    public static bool operator >>(Server server, int fileCount)
+    {
+        Upload(fileCount);
+        return true;
+    }
+}
+
+class Program4
+{
+    static void Main()
+    {
+        Server server = new();
+
+        if (server >> 5)
+        {
+            //
+        }
+        if (server << 3)
+        {
+            //
+        }
     }
 }
